@@ -1,3 +1,39 @@
+# Agent 学习笔记
+
+记录 AI Agent 开发学习进度、实战项目、经验总结。  
+本仓库同时包含 **`docs/` 学习文档** 与根目录下的 **Video Agent 实战工程**（`video_agent/` 包）。
+
+## 学习内容
+
+| 日期 | 内容 | 状态 |
+|------|------|------|
+| 2026-05-11 | LangGraph + LangChain 学习笔记 | ✅ |
+| 2026-05-11 | LangSmith 测试经验 | ✅ |
+| 2026-05-11 | Video Agent 视频创作助手（LangGraph） | ✅ |
+
+## 目录结构
+
+```text
+agent-learning-notes/
+├── docs/                    # 学习文档
+│   ├── LangGraph_LangChain_学习笔记.md
+│   └── LangSmith_测试经验.md
+├── scripts/                 # 历史/辅助脚本（若有）
+├── knowledge/             # 本地 RAG 知识库（*.md）
+├── memory/                # 长期记忆 user_memory.json
+├── video_agent/           # LangGraph 视频创作 Agent 包
+├── image_agent.py         # 兼容入口 → video_agent.cli
+├── .env.example           # 环境变量模板（复制为 .env）
+└── README.md
+```
+
+## 相关链接
+
+- LangGraph 官方文档：https://langchain-ai.github.io/langgraph/
+- LangChain 官方文档：https://python.langchain.com/
+
+---
+
 # Video Agent Framework
 
 基于 LangGraph + LangChain 的视频创作 Agent 框架。  
@@ -71,16 +107,12 @@ python image_agent.py
 
 ---
 
-## 2. 项目结构
+## 2. 项目结构（代码）
 
 ```text
-lang/
-  README.md
+项目根/
   image_agent.py                  # 兼容入口（转发到 video_agent.cli）
   knowledge/                      # 本地 RAG 知识库
-    prompt_templates.md
-    negative_prompt_examples.md
-    video_style_guides.md
   memory/
     user_memory.json              # 长期记忆文件
   video_agent/
@@ -320,3 +352,6 @@ START
 
 本仓库目前未附带开源 License。若需开源，请补充许可协议并清理敏感配置。
 
+---
+
+持续更新中。
