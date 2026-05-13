@@ -1,0 +1,20 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# 环境变量与密钥（勿提交）
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# 工具缓存
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
